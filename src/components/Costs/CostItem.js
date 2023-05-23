@@ -1,6 +1,6 @@
 import './CostItem.css';
 import CostDate from './CostDate';
-import Card from './Card';
+import Card from '../UI/Card';
 
 function CostItem(props) {
     // const costDate = new Date(2022, 2, 12);
