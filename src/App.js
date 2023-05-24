@@ -1,7 +1,8 @@
 // import React from "react";
 import Costs from "./components/Costs/Costs";
+import NewCost from "./components/NewCost/NewCost";
 
-function App() {
+const App = () => {
 
   const costs = [
     {
@@ -33,6 +34,7 @@ function App() {
   return (
     <div>
       <h1>Let's start learning React!</h1>
+      <NewCost />
       <Costs costs={costs}/>
     </div>
   );
