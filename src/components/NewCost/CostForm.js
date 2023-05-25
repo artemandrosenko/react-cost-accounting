@@ -15,25 +15,46 @@ const CostForm = () => {
     const nameChangeHandler = (event) => {
         // console.log(event.target.value);
         // setName(event.target.value);
-        setUserInput({
-            ...userInput,
-            name: event.target.value,
+        // setUserInput({
+        //     ...userInput,
+        //     name: event.target.value,
+        // });
+
+        setUserInput((previousState) => {
+            return {
+                ...previousState,
+                name: event.target.value
+            }
         });
     }
 
     const amountChangeHandler = (event) => {
         // setAmount(event.target.value);
-        setUserInput({
-            ...userInput,
-            amount: event.target.value
+        // setUserInput({
+        //     ...userInput,
+        //     amount: event.target.value
+        // });
+
+        setUserInput((previousState) => {
+            return {
+                ...previousState,
+                amount: event.target.value
+            }
         });
+        
     }
 
     const dateChangeHandler = (event) => {
         // setDate(event.target.value);
-        setUserInput({
-            ...userInput,
-            date: event.target.value
+        // setUserInput({
+        //     ...userInput,
+        //     date: event.target.value
+        // });
+        setUserInput((previousState) => {
+            return {
+                ...previousState,
+                date: event.target.value
+            }
         });
     }
 
