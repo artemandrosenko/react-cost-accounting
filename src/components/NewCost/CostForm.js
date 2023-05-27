@@ -1,7 +1,7 @@
 import './CostForm.css';
 import React, { useState } from 'react';
 
-const CostForm = () => {
+const CostForm = (props) => {
     const [name, setName] = useState('');
     const [amount, setAmount] = useState('');
     const [date, setDate] = useState('');
@@ -67,6 +67,9 @@ const CostForm = () => {
             date: new Date(date),
         };
 
+        props.onSaveCostData(costData);
+
+        //обнуляю инпуты для следующего раза использования, что были пустые
         setName('');
         setAmount('');
         setDate('');
