@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Costs from "./components/Costs/Costs";
 import NewCost from "./components/NewCost/NewCost";
-import Diagram from "./components/Diagram/Diagram";
 
 const INITIAL_COST = [
   {
@@ -47,7 +46,6 @@ const App = () => {
     <div>
       <h1>Let's start learning React!</h1>
       <NewCost onAddCost={addCostHandler}/>
-      <Diagram />
       <Costs costs={costs}/>
     </div>
   );
